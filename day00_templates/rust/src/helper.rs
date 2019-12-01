@@ -8,7 +8,7 @@ pub fn read_input_file(fname: &str) -> Vec<String>
     let mut lines = Vec::new();
 
     for line in reader.lines() {
-        let line = line.unwrap(); // Ignore errors.
+        let line = line.unwrap();
         lines.push(line);
     }
     lines

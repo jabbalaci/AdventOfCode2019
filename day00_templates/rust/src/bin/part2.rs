@@ -1,6 +1,6 @@
 // Part 2
 
-mod helper;
+use day??::helper::read_input_file;    // where day?? is the project's name from Cargo.toml
 
 const INPUT_FILE: &str = "input.txt";
 
