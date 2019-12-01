@@ -14,7 +14,8 @@ but it can be used for anything. You can install it with `pip3`:
 
 Then, if you see a `build.py` file, just launch the command `pynt` and it will print
 the available tasks. For instance, to run the static type checker against a Python solution,
-run `pynt mypy` inside the folder of a Python solution.
+run `pynt mypy` inside the folder of a Python solution (for this to work, you need to
+install mypy too, but you know the drill: `pip3 install mypy --user -U`).
 
 Links
 -----
