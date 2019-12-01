@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import List
-
-
-def read_lines(fname: str) -> List[str]:
-    with open(fname) as f:
-        return f.read().strip().splitlines()
+import helper
 
 
 def fuel(mass: int) -> int:
@@ -24,8 +19,8 @@ def extra_fuel(mass: int) -> int:
     return total
 
 
-def main():
-    lines = read_lines("input.txt")
+def main() -> None:
+    lines = helper.read_lines("input.txt")
     result = sum(extra_fuel(int(line)) for line in lines)
     print(result)
 

@@ -3,14 +3,10 @@
 import helper
 
 
-def fuel(mass: int) -> int:
-    return (mass // 3) - 2
-
-
-def main() -> None:
+def main():
     lines = helper.read_lines("input.txt")
-    result = sum(fuel(int(line)) for line in lines)
-    print(result)
+    for line in lines:
+        print(line)
 
 ##############################################################################
 
