@@ -164,7 +164,9 @@ dkms.conf
 
 # Jabba
 p1
+part1
 p2
+part2
 
 ########
 # Rust #

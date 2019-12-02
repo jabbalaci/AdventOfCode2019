@@ -1,7 +1,7 @@
-#include "helper.h"
-
 #include <stdio.h>
 #include <stdlib.h>
+
+#include "helper.h"
 
 
 void debug(const int *numbers)
