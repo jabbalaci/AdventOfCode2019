@@ -183,3 +183,10 @@ Cargo.lock
 
 # Jabba
 .idea/
+
+
+##########
+# common #
+##########
+
+.vscode/
