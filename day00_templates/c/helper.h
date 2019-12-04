@@ -57,3 +57,18 @@ int * extract_ints_from_string(char* line, char* delimiter)
 
     return numbers;
 }
+
+char* * extract_strings_from_string(char* line, char* delimiter)
+{
+    char* *words = NULL;
+
+    char* p = strtok(line, delimiter);
+    while (p != NULL)
+    {
+        // printf("%s\n", p);
+        arrput(words, p);
+        p = strtok(NULL, delimiter);
+    }
+
+    return words;
+}
