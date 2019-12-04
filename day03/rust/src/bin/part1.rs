@@ -1,4 +1,6 @@
-use hashbrown::{HashMap, HashSet};
+use fxhash::FxHashMap as HashMap;
+use fxhash::FxHashSet as HashSet;
+
 use day03::helper::read_input_file;
 
 // const INPUT_FILE: &str = "examples/part1/example1.txt";
@@ -35,8 +37,8 @@ impl Grid {
         Grid {
             wire1: wire1,
             wire2: wire2,
-            wire1_path: HashMap::new(),
-            wire2_path: HashMap::new()
+            wire1_path: HashMap::default(),
+            wire2_path: HashMap::default()
         }
     }
 
@@ -46,7 +48,7 @@ impl Grid {
     }
 
     fn follow_wire(&self, wire: &Vec<String>) -> HashMap<Point, i32> {
-        let mut coordinates: HashMap<Point, i32> = HashMap::new();
+        let mut coordinates: HashMap<Point, i32> = HashMap::default();
         let mut x = 0;
         let mut y = 0;
         for instruction in wire {
@@ -79,14 +81,14 @@ impl Grid {
 
     fn find_closest_intersection(&self) -> i32 {
         let wire1_path_as_set = {
-            let mut result = HashSet::new();
+            let mut result = HashSet::default();
             for key in self.wire1_path.keys() {
                 result.insert(key);
             }
             result
         };
         let wire2_path_as_set = {
-            let mut result = HashSet::new();
+            let mut result = HashSet::default();
             for key in self.wire2_path.keys() {
                 result.insert(key);
             }
