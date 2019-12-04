@@ -185,6 +185,7 @@ Cargo.lock
 
 # Jabba
 .idea/
+perf.data
 
 
 ##########
