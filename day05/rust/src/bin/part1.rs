@@ -69,7 +69,7 @@ fn read_instruction(number: i32) -> Instruction
     result
 }
 
-fn run(program: &Vec<i32>) -> Vec<i32>
+fn run(program: &Vec<i32>)
 {
     fn get_param(data: &Vec<i32>, value: i32, mode: Mode) -> i32 {
         if mode == Mode::ImmediateMode {
@@ -119,8 +119,6 @@ fn run(program: &Vec<i32>) -> Vec<i32>
         }
         inst = read_instruction(data[idx]);
     }
-
-    data
 }
 
 fn main()

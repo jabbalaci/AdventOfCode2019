@@ -12,7 +12,7 @@ Docs: http://nothings.org/stb_ds
 #include <stdlib.h>
 #include <string.h>
 
-#define MAXCHAR 1000
+#define MAXCHAR 10000
 
 char* * read_lines(const char* fname)
 {
