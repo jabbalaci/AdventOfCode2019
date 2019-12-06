@@ -11,7 +11,7 @@ def find_path(d: Dict[str, str], src: str, dest: str) -> List[str]:
     while True:
         value = d[key]
         path.append(value)
-        if value == 'COM':
+        if value == dest:
             break
         key = value
     #
