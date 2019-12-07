@@ -34,7 +34,7 @@ def read_instruction(number: int) -> Instruction:
     if number == 99:
         # special case, it'll halt the program; parameter modes are not used, they get a dummy value
         return Instruction(opcode=number, first_param_mode=Mode.POSITION_MODE,
-                       second_param_mode=Mode.POSITION_MODE, third_param_mode=Mode.POSITION_MODE)
+                           second_param_mode=Mode.POSITION_MODE, third_param_mode=Mode.POSITION_MODE)
 
     s = str(number)
     if len(s) == 1:
