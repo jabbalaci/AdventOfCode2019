@@ -14,7 +14,7 @@ Docs: http://nothings.org/stb_ds
 #include <stdlib.h>
 #include <string.h>
 
-#define MAXCHAR 10000
+#define MAXCHAR 20000
 
 
 char* * read_lines(const char* fname)
