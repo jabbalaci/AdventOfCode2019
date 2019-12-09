@@ -206,43 +206,10 @@ class Amplifier:
 # endclass
 
 
-def run_test_for_day5():
-    line = helper.read_lines("input_day5.txt")[0]
-    program = tuple([int(n) for n in line.split(",")])
-    ampl = Amplifier(program, 5)
-    ampl.run()
-
-
-def run_test1():
-    line = "109,1,204,-1,1001,100,1,100,1008,100,16,101,1006,101,0,99"
-    program = tuple([int(n) for n in line.split(",")])
-    ampl = Amplifier(program, 1)
-    ampl.run()
-
-
-def run_test2():
-    line = "1102,34915192,34915192,7,4,7,99,0"
-    program = tuple([int(n) for n in line.split(",")])
-    ampl = Amplifier(program, 1)
-    ampl.run()
-
-
-def run_test3():
-    line = "104,1125899906842624,99"
-    program = tuple([int(n) for n in line.split(",")])
-    ampl = Amplifier(program, 1)
-    ampl.run()
-
-
 def main() -> None:
-    # run_test_for_day5()
-    # run_test1()    # correct output but then goes into an infinite loop
-    # run_test2()    # OK, output a 16-digit number
-    # run_test3()    # OK, output the large number in the middle
-
     line = helper.read_lines("input.txt")[0]
     program = tuple([int(n) for n in line.split(",")])
-    ampl = Amplifier(program, 1)    # test mode
+    ampl = Amplifier(program, 2)    # sensor boost mode
     ampl.run()
 
 ##############################################################################
