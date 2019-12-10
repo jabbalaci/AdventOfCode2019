@@ -56,7 +56,6 @@ def process_file(fname: str) -> Tuple[Point, int]:
     lines = helper.read_lines(fname)
     am = AsteroidsMap(lines)
     # am.print_map()
-    asteroids = am.collect_asteroids()
     visibility: Dict[Point, int] = {}    # key: point, value: number of visible points
     for curr in am.points:
         d = am.find_visible_asteroids_from(curr)
