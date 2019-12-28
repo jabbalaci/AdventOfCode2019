@@ -44,3 +44,14 @@ Awesome AoC
 * Awesome AoC / [Python](https://github.com/Bogdanp/awesome-advent-of-code#python)
 * Awesome AoC / [C](https://github.com/Bogdanp/awesome-advent-of-code#c)
 * Awesome AoC / [Rust](https://github.com/Bogdanp/awesome-advent-of-code#rust)
+
+Status
+------
+
+This year I couldn't finish all the exercises. I had other things to do, and
+some exercises got quite complicated. In 2020 I will try to solve
+some more exercises. At the end of 2019, here is my status:
+
+<p align="center">
+  <img width="75%" src="assets/AoC_2019.png">
+</p>
