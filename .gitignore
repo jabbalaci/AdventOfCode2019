@@ -110,7 +110,7 @@ venv.bak/
 #####
 
 # Prerequisites
-*.d
+# *.d
 
 # Object files
 *.o
@@ -164,9 +164,9 @@ dkms.conf
 
 # Jabba
 p1
-part1
+# part1
 p2
-part2
+# part2
 
 ########
 # Rust #
